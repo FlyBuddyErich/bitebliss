@@ -9,6 +9,7 @@ import media from '../../assets/media.png';
 import instagram from '../../assets/instagram.png';
 import x from '../../assets/x.png';
 import arrowUp from '../../assets/arrow_up.png';
+import { Route, Routes } from 'react-router-dom';
 
 const Presentation = () => {
     const imageRef1 = useRef(null);
@@ -50,11 +51,11 @@ const Presentation = () => {
         <div className="presentation-page">
             <div className="presentation-box">
                 <div className="left-side">
-                <a href="#"><img src={burgerSticker} alt="" className='burger-logo' /></a>
+                <a href="/bitebliss/"><img src={burgerSticker} alt="" className='burger-logo' /></a>
                     <h1>BITEBLISS</h1>
                     <p>Best Burgers In The Universe!</p>
                     <p>Try It Yourself!</p>
-                    <a href="#"><button>Let me see!</button></a>
+                   <a href="/bitebliss/"><button>Let me see!</button></a>
                 </div>
                 <div className="right-side">
                     <img src={rightImage} alt="" />
