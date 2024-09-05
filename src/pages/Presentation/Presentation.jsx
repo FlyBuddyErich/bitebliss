@@ -50,11 +50,11 @@ const Presentation = () => {
         <div className="presentation-page">
             <div className="presentation-box">
                 <div className="left-side">
-                <a href="/"><img src={burgerSticker} alt="" className='burger-logo' /></a>
+                <a href="#"><img src={burgerSticker} alt="" className='burger-logo' /></a>
                     <h1>BITEBLISS</h1>
                     <p>Best Burgers In The Universe!</p>
                     <p>Try It Yourself!</p>
-                    <a href="/"><button>Let me see!</button></a>
+                    <a href="#"><button>Let me see!</button></a>
                 </div>
                 <div className="right-side">
                     <img src={rightImage} alt="" />

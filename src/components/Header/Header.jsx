@@ -8,7 +8,7 @@ const Header = () => {
         <div className="header-contents">
             <h2>Order your favourite positions here</h2>
             <p>Choose from a diverse menu featuring a delectable array of dishes crafted with love and soul</p>
-           <a href='#explore-menu'><button>View Menu</button></a>
+           <a onClick={() => window.scrollTo({top: 950, behavior: 'smooth'})}><button>View Menu</button></a>
         </div>
     </div>
   )
