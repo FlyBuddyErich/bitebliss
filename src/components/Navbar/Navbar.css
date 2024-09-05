@@ -1,0 +1,132 @@
+.navbar {
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    height: 100px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.logo:hover {
+    transform: rotate(-10deg);
+}
+
+.navbar-menu {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    color: black;
+    font-size: 18px;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.navbar-right img {
+    height: 35px;
+}
+
+.navbar button {
+    border: none;
+    color: black;
+    font-weight: 500;
+    padding: 13px 23px;
+    background-color: transparent;
+    font-size: max(16px);
+    border-radius: 50px;
+    border: 1px solid black;
+    cursor: pointer;
+    transition: 0.3s;
+    backdrop-filter: blur(8px);
+}
+
+.navbar button:hover {
+    background-color: #b62424;
+    color: white;
+}
+
+.navbar .active {
+    padding-bottom: 2px;
+    border-bottom: 2px solid #b62424;
+}
+
+.navbar li{
+    cursor: pointer;
+}
+
+.navbar-search-icon {
+    position: relative;
+}
+
+
+.navbar-search-icon .dot {
+    position: absolute;
+    min-width: 10px;
+    min-height: 10px;
+    background-color: #b62424;
+    border-radius: 5px;
+    top: -8px;
+    right: -8px;
+}
+
+@media (max-width:1050px) {
+    .navbar .logo {
+        width: auto;
+        height: 100px;
+    }
+    .navbar-menu {
+        gap: 20px;
+        font-size: 17px;
+    }
+
+    .navbar-right {
+        gap: 30px;
+    }
+
+    .navbar-right img {
+        height: 22px;
+    }
+
+    .navbar-right button {
+        padding: 8px 25px;
+    }
+}
+
+@media (max-width:900px) {
+    .navbar .logo {
+        width: auto;
+        height: 80px;
+    }
+    .navbar-menu {
+        gap: 15px;
+        font-size: 16px;
+    }
+
+    .navbar-right {
+        gap: 20px;
+    }
+
+    .navbar-right img {
+        width: 20px;
+    }
+
+    .navbar-right button {
+        padding: 7px 20px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width:750px) {
+
+    .navbar-menu {
+        display: none;
+    }
+
+}

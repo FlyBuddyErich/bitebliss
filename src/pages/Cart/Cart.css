@@ -1,0 +1,138 @@
+.cart {
+    margin-top: 50px;
+}
+
+.arrow-icon {
+    height: 25px;
+    margin-bottom: 20px;
+}
+
+.cart-items-title {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr 1fr 1fr 0.5fr;
+    align-items: center;
+    color: black;
+    font-size: max(1vw, 12px);
+}
+
+.cart-items-item {
+    margin: 10px 0px;
+    color: black;
+}
+
+.cart-items-item img {
+    height: 70px;
+    width: 100px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.cart hr {
+    height: 1px;
+    background-color: #b62424;
+    border: none;
+}
+
+.cart-items-item .cross {
+    cursor: pointer;
+}
+
+.cart-bottom {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    gap: max(12vw,20px);
+}
+
+.cart-total {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cart-total-details {
+    display: flex;
+    justify-content: space-between;
+    color: black;
+    margin-top: 10px;
+}
+
+.cart-total hr {
+    margin: 10px 0px;
+}
+
+.cart-total button {
+    border: none;
+    color: white;
+    background-color: #b62424;
+    width: max(15vw,200px);
+    padding: 12px 0px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.cart-total button:hover {
+    background-color: #ffba44;
+    color: #b62424;
+    font-weight: 600;
+}
+
+.cart-promocode {
+    flex: 1;
+}
+
+.cart-promocode p {
+    color: black;
+}
+
+.cart-promocode-input {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #eaeaea;
+    border-radius: 4px;
+}
+
+.cart-promocode-input input {
+    background: transparent;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+}
+
+.cart-promocode-input button {
+    width: max(10vw, 150px);
+    padding: 12px 5px;
+    background-color: black;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.cart-promocode-input button:hover{
+    background-color: #b62424;
+}
+
+.cart-promocode p {
+    margin-top: 10px;
+}
+
+@media (max-width: 750px) {
+    .cart-bottom {
+        flex-direction: column-reverse;
+    }
+
+    .cart-promocode {
+        justify-content: start;
+    }
+
+    .cart-items-item img {
+        height: 30px;
+        width: 40px;
+    }
+}
